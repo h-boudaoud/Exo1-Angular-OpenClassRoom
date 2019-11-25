@@ -28,7 +28,7 @@ export class PostAddComponent implements OnInit {
 
   titleError() {
     let error = true;
-    let regex = RegExp("^[a-z\\d\\- '\")(\\][\\@:\\/,;.!àçèé°]+$")
+    let regex = RegExp("^[A-Za-z\\d\\- '\")(\\][\\@:\\/,;.!àçèé°]+$")
     //console.log('this.new_post.title',this.new_post.title,'\nregex : ',regex.test(this.new_post.title.trim()))
     if(this.new_post.title.trim().length==0 || !regex.test(this.new_post.title.trim())){
       error = false;
@@ -39,7 +39,7 @@ export class PostAddComponent implements OnInit {
   }
   contentError() {
     let error = true;
-    let regex = RegExp("^[a-z\\d\\-\\s'\")(\\][\\@:\\/,;.!àçèé°]+$")
+    let regex = RegExp("^[A-Za-z\\d\\-\\s'\")(\\][\\@:\\/,;.!àçèé°]+$")
     if(this.new_post.content.trim().length==0|| !regex.test(this.new_post.content.trim())){
       error = false;
       return false;
