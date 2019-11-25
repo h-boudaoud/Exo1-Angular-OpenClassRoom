@@ -2,19 +2,26 @@
   <!-- Toolbar -->
   <nav class="navbar navbar-expand-lg" role="banner">
     <button
-      *ngIf="name_component=='list'"
+      *ngIf="name_component!='add'"
       class="btn btn-primary"
       (click)="change_component('add')"
     >
       <span class="glyphicon glyphicon-plus-sign"></span> Add post
     </button>
     <button
-      *ngIf="name_component=='add'"
+      *ngIf="name_component!='list'"
       class="btn btn-primary"
       (click)="change_component('list')"
     >
       <span class="glyphicon glyphicon-list"></span> Post list
     </button>
+    <button
+    *ngIf="name_component!='exo1'"
+    class="btn btn-primary"
+    (click)="change_component('exo1')"
+  >
+    <span class="glyphicon glyphicon-open-file"></span> Exo 1
+  </button>
     <div class="spacer"></div>
     <span>Créez une application de type blog</span>
     <div class="spacer"></div>
@@ -29,6 +36,17 @@
 
   <section>
     <h3 class="capitalize">{{pageTitle[name_component]}}</h3>
+
+    <object
+      *ngIf="name_component=='exo1'"
+      data='assets/doc/Exo1.pdf'
+      width="100%" height="100%"
+      type='application/pdf'
+    >
+      <p>Sorry, the PDF couldn't be displayed :(</p>
+      <a href='assets/doc/Exo1.pdf' target="_blank">Click Here</a>
+    </object>
+
     <div
       *ngIf="name_component=='add'" class="backdrop"
     >
@@ -49,6 +67,8 @@
       *ngIf="name_component=='list'"
       [postList]="postList"
     ></app-post-list>
+
+
 
 
   </section>

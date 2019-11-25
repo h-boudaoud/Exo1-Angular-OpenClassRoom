@@ -35,7 +35,7 @@ export class AppComponent {
   private postList=[];
   private name_component: string;
   constructor() {
-    this.postList = this.oldPostList
+    this.postList = this.oldPostList;
     this.name_component=(this.postList.length>0)?'list':'add';
   }
 
