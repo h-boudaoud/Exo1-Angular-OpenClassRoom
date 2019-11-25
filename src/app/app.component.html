@@ -28,7 +28,7 @@
   </nav>
 
   <section>
-    <h3>{{name_component}}</h3>
+    <h3 class="capitalize">{{pageTitle[name_component]}}</h3>
     <div
       *ngIf="name_component=='add'" class="backdrop"
     >
@@ -55,10 +55,10 @@
 
   <!-- Footer -->
   <footer class="align-content-center">
+    <div>Ma 1ère application</div>
     <div class="spacer"></div>
-    Ma 1ère application
-    <div class="spacer"></div>
-    <select  class="form-control" style="font-size: 80%;width: 30%">
+    <label>Environnement :</label>
+    <select class="form-control" style="font-size: 80%;width: 30%">
       <option disabled selected> Angular CLI: 8.3.19
         Node: 12.5.0
       </option>
