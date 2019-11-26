@@ -1,3 +1,9 @@
+J'ai réalisé ce projet pour mettre en place ce que j'ai appris dans le cours d'Angular de OpenClassRoom.
+Aussi, j'en ai profité pour appliquer des savoir-faire en git
+
+
+######################################################################################
+
 # ApplicationTypeBlog
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.19.
