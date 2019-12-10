@@ -7,6 +7,7 @@ import {Component, Input, OnInit} from '@angular/core';
 })
 export class PostListItemComponent implements OnInit {
   @Input() title: string;
+  // tslint:disable-next-line:variable-name
   @Input() created_at: Date;
   @Input() loveIts: number;
   @Input() content: string;
@@ -15,16 +16,16 @@ export class PostListItemComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
-    console.log('created_at',this.created_at)
+    console.log('created_at', this.created_at);
   }
-  loveIt(rep,index) {
-    if(rep){
-      this.loveIts++
+  loveIt(rep) {
+    if (rep) {
+      this.loveIts++;
     }
-    if(!rep){
-      this.loveIts--
+    if (!rep) {
+      this.loveIts--;
     }
-    console.log('posts',this.loveIts,'\tindex',this.index)
+    console.log('posts', this.loveIts, '\tindex', this.index);
   }
 
 }

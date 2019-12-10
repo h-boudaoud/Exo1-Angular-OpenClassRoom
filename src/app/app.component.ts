@@ -7,7 +7,7 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'application-type-blog';
-  private oldPostList =[
+  public oldPostList = [
     {
       title: 'post n°1',
       content: 'ceci est le premier post',
@@ -27,24 +27,25 @@ export class AppComponent {
       created_at: new Date('2019-11-22 11:05:17')
     },
 
-]
-  private pageTitle = {
-    'add': 'ajouter un nouveau post'
-    ,'list': 'la list des posts'
-  }
-  private postList=[];
-  private name_component: string;
+];
+  public pageTitle = {
+    add: 'ajouter un nouveau post'
+    , list: 'la list des posts'
+  };
+  public postList = [];
+  // tslint:disable-next-line:variable-name
+  public name_component: string;
   constructor() {
     this.postList = this.oldPostList;
-    this.name_component=(this.postList.length>0)?'list':'add';
+    this.name_component = (this.postList.length > 0) ? 'list' : 'add';
   }
 
   change_component(component: string) {
-    this.name_component =  component
+    this.name_component =  component;
   }
 
   onClose() {
-    this.name_component ='list'
+    this.name_component = 'list';
   }
 
 }

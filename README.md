@@ -1,5 +1,8 @@
-J'ai réalisé ce projet pour mettre en place ce que j'ai appris dans le cours d'Angular de OpenClassRoom.
-Aussi, j'en ai profité pour appliquer des savoir-faire en git
+﻿
+######################################################################################
+#### Exo1-Angular-OpenClassRoom
+##### J'ai réalisé ce projet pour mettre en place ce que j'ai appris dans le cours d'Angular de OpenClassRoom.
+##### Aussi, j'en ai profité pour appliquer des savoir-faire en git
 
 
 ######################################################################################

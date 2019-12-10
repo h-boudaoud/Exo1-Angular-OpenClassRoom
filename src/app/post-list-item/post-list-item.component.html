@@ -1,5 +1,5 @@
 <section id ="post-list-item">
-  <nav class="toolbar" role="banner">
+  <nav class="toolbar">
     <div class="capitalize">{{title}}</div>
     <div class="spacer"></div>
     <div>{{created_at | date:'dd/MM/yyyy HH:mm:ss'}}</div>
@@ -15,13 +15,13 @@
     <div style="display: flex">
       <div class="spacer"></div>
       <button
-        (click)="loveIt(true,index)"
+        (click)="loveIt(true)"
         class="btn btn-success"
         style="padding:0 1rem;border: .3rem solid"
       >Love it
       </button>
       <button
-        (click)="loveIt(false,index)"
+        (click)="loveIt(false)"
         class="btn btn-danger"
         style="padding:0 1rem;border: .3rem solid"
       >Don't love it
